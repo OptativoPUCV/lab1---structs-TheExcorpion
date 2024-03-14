@@ -29,17 +29,6 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) 
 {
-  int primerN = 0;
-  int ultimoN = size - 1;
-  while (primerN < ultimoN)
-    {
-      int temp = arr[primerN];
-      arr[primerN] = arr[ultimoN];
-      arr[ultimoN] = temp;
-      primerN++;
-      ultimoN--;
-    }
-
 
   
 }
@@ -52,7 +41,15 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize)
+{
+
+
+
+
+  
+  return NULL;
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
