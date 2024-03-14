@@ -34,13 +34,8 @@ void reverseArray(int arr[], int size)
       temp = arr[i];
       arr[i] = arr[size - i - 1];
       arr[size - i - 1] = temp;
-
     }
-  
-
-  
 }
-
 /*
 Ejercicio 3: Filtrar Números Pares
 Descripción: Escribe una función que tome un arreglo de enteros
@@ -51,12 +46,18 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize)
 {
-
-
-
-
-  
-  return NULL;
+  int *lista = (int *) malloc(size * sizeof(int));
+  *newSize = 0;
+  for (int i = 0; i < size; i++)
+    {
+      if (arr[i] % 2 == 0)
+      {
+        lista[*newSize] = arr[i];
+        (*newSize)++;
+      }
+      
+    }
+  return lista;
 }
 
 /*
