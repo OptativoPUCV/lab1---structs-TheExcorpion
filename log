@@ -58,3 +58,72 @@ In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163
       |         ^~~~~~~~
 Compilation failed
 c3f24d3
+Thu 14 Mar 2024 02:39:19 PM UTC: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c:49:36: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘)’ token
+   49 |                        int result[]) {}
+      |                                    ^
+exercises.c:81:1: error: "/*" within comment [-Werror=comment]
+   81 | /*
+      |  
+test.c: In function ‘test_reverseArray’:
+test.c:125:5: error: implicit declaration of function ‘reverseArray’; did you mean ‘test_reverseArray’? [-Werror=implicit-function-declaration]
+  125 |     reverseArray(arr, size);
+      |     ^~~~~~~~~~~~
+      |     test_reverseArray
+test.c: In function ‘test_filterEvenNumbers’:
+test.c:151:19: error: implicit declaration of function ‘filterEvenNumbers’; did you mean ‘test_filterEvenNumbers’? [-Werror=implicit-function-declaration]
+  151 |     int *result = filterEvenNumbers(arr, size, &newSize);
+      |                   ^~~~~~~~~~~~~~~~~
+      |                   test_filterEvenNumbers
+test.c:151:19: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+test.c: In function ‘test_mergeSort’:
+test.c:204:3: error: implicit declaration of function ‘mergeSortedArrays’ [-Werror=implicit-function-declaration]
+  204 |   mergeSortedArrays(arr1, size1, arr2, size2, result);
+      |   ^~~~~~~~~~~~~~~~~
+test.c: In function ‘test_checkSorted’:
+test.c:258:18: error: implicit declaration of function ‘checkSorted’; did you mean ‘test_checkSorted’? [-Werror=implicit-function-declaration]
+  258 |     int result = checkSorted(arr, size);
+      |                  ^~~~~~~~~~~
+      |                  test_checkSorted
+test.c: At top level:
+test.c:289:26: error: unknown type name ‘Libro’
+  289 | void imprimirLibro(const Libro *libro) {
+      |                          ^~~~~
+test.c: In function ‘imprimirLibro’:
+test.c:290:35: error: request for member ‘titulo’ in something not a structure or union
+  290 |   printf("    Título: %s\n", libro->titulo);
+      |                                   ^~
+test.c:291:50: error: request for member ‘autor’ in something not a structure or union
+  291 |   printf("    Autor: %s (Nacido en: %d)\n", libro->autor.nombre, libro->autor.anioNacimiento);
+      |                                                  ^~
+test.c:291:71: error: request for member ‘autor’ in something not a structure or union
+  291 |   printf("    Autor: %s (Nacido en: %d)\n", libro->autor.nombre, libro->autor.anioNacimiento);
+      |                                                                       ^~
+test.c:292:47: error: request for member ‘anioPublicacion’ in something not a structure or union
+  292 |   printf("    Año de Publicación: %d\n", libro->anioPublicacion);
+      |                                               ^~
+test.c: In function ‘test_biblioteca’:
+test.c:296:3: error: unknown type name ‘Libro’
+  296 |   Libro libro;
+      |   ^~~~~
+test.c:306:5: error: implicit declaration of function ‘inicializarLibro’ [-Werror=implicit-function-declaration]
+  306 |     inicializarLibro(&libro, titulos[i], autores[i], aniosNacimiento[i],
+      |     ^~~~~~~~~~~~~~~~
+test.c:312:21: error: request for member ‘titulo’ in something not a structure or union
+  312 |     if (strcmp(libro.titulo, titulos[i]) != 0 ||
+      |                     ^
+test.c:313:21: error: request for member ‘autor’ in something not a structure or union
+  313 |         strcmp(libro.autor.nombre, autores[i]) != 0 ||
+      |                     ^
+test.c:314:14: error: request for member ‘autor’ in something not a structure or union
+  314 |         libro.autor.anioNacimiento != aniosNacimiento[i] ||
+      |              ^
+test.c:315:14: error: request for member ‘anioPublicacion’ in something not a structure or union
+  315 |         libro.anioPublicacion != aniosPublicacion[i]) {
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+db98b7a

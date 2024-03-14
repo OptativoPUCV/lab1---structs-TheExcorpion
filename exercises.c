@@ -1,4 +1,4 @@
-a #include <ctype.h>
+#include <ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -27,7 +27,7 @@ Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+//void reverseArray(int arr[], int size) {}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -37,7 +37,7 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+//int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -45,7 +45,7 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
+//void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {}
 
 /*
@@ -54,7 +54,7 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+//int checkSorted(int arr[], int size) { return -2; }
 
 /*
 Ejercicio 6: Información de una Biblioteca
@@ -64,7 +64,7 @@ información utilizando estructuras anidadas en C. Escribe la función para
 inicializar la información de un libro.
 */
 
-typedef struct {
+/*typedef struct {
   char nombre[50];
   int anioNacimiento;
 } Autor;
