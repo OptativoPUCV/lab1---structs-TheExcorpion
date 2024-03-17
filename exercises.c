@@ -81,7 +81,15 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
       }
       k++;
     }
+  while (i < size1)
+    {
+      result[k] = arr1[i];
+      i++;
+      k++;
+    }
+  
 }
+
 /*
 Ejercicio 5: Comprobación de Ordenación
 Descripción: Escribe una función que tome un arreglo y su tamaño,
