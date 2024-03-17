@@ -104,14 +104,10 @@ int checkSorted(int arr[], int size)
       if (arr[i] > arr[i + 1])
       {
         ascendente = 0;
-        
-      }
-      if (arr[i] < arr[i + 1])
+      } else
       {
         descendente = 0;
       }
-      
-    }
   if (ascendente)
   {
     return 1;
@@ -122,7 +118,6 @@ int checkSorted(int arr[], int size)
   }
   return 0;
 
-  
   return -2; 
 }
 
