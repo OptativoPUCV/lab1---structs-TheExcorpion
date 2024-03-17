@@ -55,7 +55,6 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
         lista[*newSize] = arr[i];
         (*newSize)++;
       }
-  
     }
   return lista;
 }
@@ -116,8 +115,6 @@ int checkSorted(int arr[], int size)
   {
     return -1;
   }
-  return 0;
-
   return -2; 
 }
 
